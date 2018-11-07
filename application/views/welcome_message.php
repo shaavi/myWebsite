@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Parallax Template - Materialize</title>
+  <title>Shavindi Pathirana</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -24,8 +24,7 @@
 
 <style>
 .parallax-container {
-  height: 950px
-  ;
+  height: 950px;
 }</style>
 
 <body>
@@ -43,9 +42,40 @@
 
 <!-- first image -->
 
-<!-- <div  class="responsive-img parallax-container">
-      <div class=" responsive-img parallax"><img style="height: 500px;" class="responsive-img" src="<?php echo base_url(); ?>public/img/qw.jpg"></div>
-</div> -->
+
+<div id="index-banner" class="esponsive-img parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center white-text text-lighten-2">Parallax Templates</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Because programming is not just coding.</h5>
+        </div>
+        <!-- <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div> -->
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="<?php echo base_url(); ?>public/img/qw.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+<!-- about -->
+
+<div id="introduction" class="container section scrollspy">
+  <div class="section" style="text-align: center;">
+    <h5 style="text-align: center; font-size: 46px; margin-top: 25px;">About</h5>
+    <div class="col s2">
+      <img src="<?php echo base_url(); ?>public/img/Shavindi.jpg" style="margin-top: 32px; margin-bottom: 32px; width:10em; height:10em;" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+    </div>
+      <p class="">I am Shavindi Pathirana a 22 year old girl from Gampaha, Sri Lanka currently working as a Software Engineering intern in a reputed company in Sri Lanka. My love for software engineering grew in since the days I played computer games when I was a little kid. Going back to my school life, I got 9A s in my G.C.E. Ordinary level Examination and my life changed in many ways after I got through my G.C.E. Advanced Level Examination. I did my A/L exam in 2014 followed by Geography, statistics and mthematics where I was categorized into the Arts Stream. I was abled to get 3 A s being the first in the island in Arts. After that I was selected to the University of Moratuwa to follow the course BSc.IT & Management.</p>
+      <p class="">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+  </div>
+</div>
+
+<!-- image 2 -->
 
 <div id="index-banner" class="esponsive-img parallax-container">
     <div class="section no-pad-bot">
@@ -62,22 +92,8 @@
 
       </div>
     </div>
-    <div class="parallax"><img src="<?php echo base_url(); ?>public/img/qw.jpg" alt="Unsplashed background img 1"></div>
+    <div class="parallax"><img src="<?php echo base_url(); ?>public/img/background2.jpg" alt="Unsplashed background img 1"></div>
   </div>
-
-
-<!-- about us  -->
-
-<div id="introduction" class="container section scrollspy">
-  <div class="section" style="text-align: center;">
-    <h5 style="text-align: center; font-size: 46px; margin-top: 25px;">About</h5>
-    <div class="col s2">
-      <img src="<?php echo base_url(); ?>public/img/Shavindi.jpg" style="margin-top: 32px; margin-bottom: 32px; width:10em; height:10em;" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-    </div>
-      <p class="">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-      <p class="">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-  </div>
-</div>
 
 
 <!-- contact us -->
@@ -85,46 +101,26 @@
 <div id="contact" class="container section scrollspy">
   <div class="section" style="text-align: center;">
     <h5 style="text-align: center; font-size: 46px; margin-top: 25px;">Contact Us</h5>
+    
+    <form class="col s12" method="post" action="<?php echo site_url('Welcome/sendMail'); ?>">
     <div class="row">
-    <form class="col s12">
       <div class="row">
-        <div class="input-field col s6">
-          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
+        <div class="input-field col s12">
+          <input placeholder="Placeholder" id="first_name" name="first_name" type="text" class="validate">
+          <label for="first_name">Name</label>
         </div>
-        <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
-          <label for="last_name">Last Name</label>
-        </div>
+      </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-          <label for="disabled">Disabled</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
+          <input id="email" type="email" name="email" class="validate">
           <label for="email">Email</label>
-        </div>
+        </div>        
       </div>
-      <div class="row">
-        <div class="col s12">
-          This is an inline input field:
-          <div class="input-field inline">
-            <input id="email_inline" type="email" class="validate">
-            <label for="email_inline">Email</label>
-            <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
-          </div>
-        </div>
-      </div>
+      <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
+    <i class="material-icons right">send</i>
+  </button>
+
     </form>
   </div>
   </div>
@@ -173,12 +169,6 @@
   <script src="<?php echo base_url(); ?>public/js/materialize.js"></script>
   <script src="<?php echo base_url(); ?>public/js/init.js"></script>
 
-  <script>
 
-   $(document).ready(function(){
-    $('.slider').slider();
-  });
-
-  </script>
   </body>
 </html>
